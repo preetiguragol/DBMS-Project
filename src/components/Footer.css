@@ -1,0 +1,32 @@
+.footer-card{
+    padding:10px;
+    background-color:#dfdbdb;
+    color:rgb(0, 0, 0);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    
+}   
+.footer-margin{
+    margin-right: 0px;
+}
+.links-style{
+    color:rgba(68, 47, 32, 0.827);
+    font-size:larger;
+}
+.p-style{
+    font-family:'Playfair Display',serif ;
+    align-items: center;
+    justify-content:space-around;
+    display:flex;
+    padding: 30px;
+   
+    
+}
+@media screen and (max-width: 768px) {
+    
+    .footer-card {
+        width: 100%; 
+        margin-bottom: 20px; }
+    
+}

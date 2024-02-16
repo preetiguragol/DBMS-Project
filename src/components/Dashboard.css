@@ -1,0 +1,127 @@
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('logo.png');
+}
+.overflowing{
+    overflow-x: hidden;
+}
+
+.customer-details,
+.billing-details {
+    background-color: #f3eeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-details {
+    width: 30%;
+}
+
+.billing-details {
+    width: 30%;
+}
+.plan-slide {
+    
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+.plan-image {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 20px;
+    border-radius: 10px 0 0 10px;
+    height:auto;
+}
+
+.plan-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.plan-details {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
+    
+}
+
+.plan-title {
+    
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+
+.plan-description {
+    font-size: 1rem;
+    color: #555;
+    
+}
+
+
+.pay-now-container {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .pay-now-button {
+    background-color: #000000; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-now-button:hover {
+    background-color: #828181; 
+  }
+  .pay-now-container1{
+    display: flex;
+    justify-content: right;
+  }
+  .pay-now-button1 {
+    background-color: #000000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right:13%;
+    margin-bottom:20px;
+  }
+  .pay-now-button1:hover {
+    background-color: #828181; 
+  }
+
+
+@media screen and (max-width: 768px) {
+    .dashboard {
+        flex-direction: column; 
+    }
+
+    .customer-details,
+    .billing-details {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
