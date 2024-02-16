@@ -19,7 +19,7 @@ const LoginPage = () => {
 
       if (response.data.success) {
         // Authentication successful
-        history.push('/dashboard'); 
+        navigate('/dashboard'); 
       } else {
         // Authentication failed
         alert('Login failed. Please check your credentials.');
