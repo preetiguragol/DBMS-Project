@@ -1,0 +1,144 @@
+{
+    "INVOICE": [
+        {
+          "INVOICE_ID": 89765001,
+          "CUSTOMER_ID": 1001,
+          "SERVICE_ID": 110,
+          "TOTAL_AMT": 999.00,
+          "IN_DATE": "2024-02-01"
+        },
+        {
+          "INVOICE_ID": 89765002,
+          "CUSTOMER_ID": 1002,
+          "SERVICE_ID": 212,
+          "TOTAL_AMT": 499.00,
+          "IN_DATE": "2024-01-02"
+        },
+        {
+          "INVOICE_ID": 89765003,
+          "CUSTOMER_ID": 1003,
+          "SERVICE_ID": 321,
+          "TOTAL_AMT": 499.00,
+          "IN_DATE": "2024-01-03"
+        },
+        {
+          "INVOICE_ID": 89765004,
+          "CUSTOMER_ID": 1004,
+          "SERVICE_ID": 493,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-01-01"
+        },
+        {
+          "INVOICE_ID": 89765005,
+          "CUSTOMER_ID": 1005,
+          "SERVICE_ID": 523,
+          "TOTAL_AMT": 999.00,
+          "IN_DATE": "2024-02-02"
+        },
+        {
+          "INVOICE_ID": 89765006,
+          "CUSTOMER_ID": 1006,
+          "SERVICE_ID": 621,
+          "TOTAL_AMT": 499.00,
+          "IN_DATE": "2024-02-06"
+        },
+        {
+          "INVOICE_ID": 89765007,
+          "CUSTOMER_ID": 1007,
+          "SERVICE_ID": 702,
+          "TOTAL_AMT": 799.00,
+          "IN_DATE": "2024-01-01"
+        },
+        {
+          "INVOICE_ID": 89765008,
+          "CUSTOMER_ID": 1008,
+          "SERVICE_ID": 822,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-02-08"
+        },
+        {
+          "INVOICE_ID": 89765009,
+          "CUSTOMER_ID": 1009,
+          "SERVICE_ID": 965,
+          "TOTAL_AMT": 999.00,
+          "IN_DATE": "2024-01-09"
+        },
+        {
+          "INVOICE_ID": 89765010,
+          "CUSTOMER_ID": 1010,
+          "SERVICE_ID": 102,
+          "TOTAL_AMT": 499.00,
+          "IN_DATE": "2024-02-10"
+        },
+        {
+          "INVOICE_ID": 89765011,
+          "CUSTOMER_ID": 1011,
+          "SERVICE_ID": 121,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-01-02"
+        },
+        {
+          "INVOICE_ID": 89765012,
+          "CUSTOMER_ID": 1012,
+          "SERVICE_ID": 873,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-02-12"
+        },
+        {
+          "INVOICE_ID": 89765013,
+          "CUSTOMER_ID": 1013,
+          "SERVICE_ID": 938,
+          "TOTAL_AMT": 999.00,
+          "IN_DATE": "2024-01-27"
+        },
+        {
+          "INVOICE_ID": 89765014,
+          "CUSTOMER_ID": 1014,
+          "SERVICE_ID": 230,
+          "TOTAL_AMT": 499.00,
+          "IN_DATE": "2024-02-01"
+        },
+        {
+          "INVOICE_ID": 89765015,
+          "CUSTOMER_ID": 1015,
+          "SERVICE_ID": 156,
+          "TOTAL_AMT": 799.00,
+          "IN_DATE": "2024-01-30"
+        },
+        {
+          "INVOICE_ID": 89765016,
+          "CUSTOMER_ID": 1016,
+          "SERVICE_ID": 998,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-01-31"
+        },
+        {
+          "INVOICE_ID": 89765017,
+          "CUSTOMER_ID": 1017,
+          "SERVICE_ID": 174,
+          "TOTAL_AMT": 999.00,
+          "IN_DATE": "2024-02-03"
+        },
+        {
+          "INVOICE_ID": 89765018,
+          "CUSTOMER_ID": 1018,
+          "SERVICE_ID": 492,
+          "TOTAL_AMT": 799.00,
+          "IN_DATE": "2024-01-31"
+        },
+        {
+          "INVOICE_ID": 89765019,
+          "CUSTOMER_ID": 1019,
+          "SERVICE_ID": 566,
+          "TOTAL_AMT": 799.00,
+          "IN_DATE": "2024-01-28"
+        },
+        {
+          "INVOICE_ID": 89765020,
+          "CUSTOMER_ID": 1020,
+          "SERVICE_ID": 642,
+          "TOTAL_AMT": 1499.00,
+          "IN_DATE": "2024-02-02"
+        }
+      ]
+}

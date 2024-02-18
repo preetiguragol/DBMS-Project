@@ -1,0 +1,142 @@
+{"CUSTOMER": [
+    {
+      "NAME": "Shubha Acharya",
+      "ADDRESS": "#107, 10th Cross, Duo Marvel Layout, Ananthapura, Yelahanka, Bangalore- 560064",
+      "PHONE_NO": 8392725529,
+      "CUSTOMER_ID": 1001,
+      "EMAIL_ID": "shubha23@gmail.com"
+    },
+    {
+      "NAME": "Rishbha Singh",
+      "ADDRESS": "Flat No. 302, 3rd floor, Hoysala Vijay Enclave, Kalpna chawla road, Sanjaynagar, Bangalore- 560094",
+      "PHONE_NO": 9513376798,
+      "CUSTOMER_ID": 1002,
+      "EMAIL_ID": "ris1902@gmail.com"
+    },
+    {
+      "NAME": "Preeti G",
+      "ADDRESS": "12-B Pocket 3, Mayur Vihar Phase 3, Bangalore- 560034",
+      "PHONE_NO": 9008006798,
+      "CUSTOMER_ID": 1003,
+      "EMAIL_ID": "prxo08@rediffmail.com"
+    },
+    {
+      "NAME": "Abijan Raaja",
+      "ADDRESS": "55, 3rd main, 4rth cross, Dollars collany, RMV 2nd stage, Bangalore- 560094",
+      "PHONE_NO": 9825667834,
+      "CUSTOMER_ID": 1004,
+      "EMAIL_ID": "czborg24@gmail.com"
+    },
+    {
+      "NAME": "Saketh Nivesh",
+      "ADDRESS": "C004 NCC meadows-1, Yelahanka, Bangalore- 560064",
+      "PHONE_NO": 8976654798,
+      "CUSTOMER_ID": 1005,
+      "EMAIL_ID": "sknivv@gmail.com"
+    },
+    {
+      "NAME": "Vivek T",
+      "ADDRESS": "#763, 7th main, 8th cross BEL Layout, 4th block Vidyaranyapura, Bangalore- 560097",
+      "PHONE_NO": 9868990865,
+      "CUSTOMER_ID": 1006,
+      "EMAIL_ID": "viv_22@rediffmail.com"
+    },
+    {
+      "NAME": "Rahul Asangi",
+      "ADDRESS": "C012 NCC meadows-2, Yelahanka, Bangalore- 560064",
+      "PHONE_NO": 9449283095,
+      "CUSTOMER_ID": 1007,
+      "EMAIL_ID": "rahul_asg_44@gmail.com"
+    },
+    {
+      "NAME": "Rakshith R",
+      "ADDRESS": "#235, GK layout, Amruthahalli, Bangalore- 560092",
+      "PHONE_NO": 9980778963,
+      "CUSTOMER_ID": 1008,
+      "EMAIL_ID": "raccoon_22_45@gmail.com"
+    },
+    {
+      "NAME": "Thomas Sunil",
+      "ADDRESS": "11-S Sector 3, Orchids Layout Phase 2, Bangalore- 560044",
+      "PHONE_NO": 9982345434,
+      "CUSTOMER_ID": 1009,
+      "EMAIL_ID": "thomas677@gmail.com"
+    },
+    {
+      "NAME": "Sanketh Reddy",
+      "ADDRESS": "Flat No. 110, 1st floor, Heritage Estates, Dodballapura road, Bangalore- 560054",
+      "PHONE_NO": 9036369007,
+      "CUSTOMER_ID": 1010,
+      "EMAIL_ID": "sankethreddy@gmail.com"
+    },
+    {
+      "NAME": "Rishik Reddy",
+      "ADDRESS": "Flat no-A219, Trendsquares Ortus 2, 2nd floor, Amrutahalli, Bengalore- 560092",
+      "PHONE_NO": 8897231145,
+      "CUSTOMER_ID": 1011,
+      "EMAIL_ID": "rishik_63@gmail.com"
+    },
+    {
+      "NAME": "Pushkal V",
+      "ADDRESS": "#278, Talacauvery layout, Amruthahalli, Byatarayanapura, Bangalore- 560092",
+      "PHONE_NO": 9955443365,
+      "CUSTOMER_ID": 1012,
+      "EMAIL_ID": "pushkal_xo@gmail.com"
+    },
+    {
+      "NAME": "Samriddhi Negi",
+      "ADDRESS": "2nd main, 3rd cross, Hunasamaranahalli, Chandramouleshwara Layout, Bangalore- 562157",
+      "PHONE_NO": 9098631334,
+      "CUSTOMER_ID": 1013,
+      "EMAIL_ID": "sam_negi@gmail.com"
+    },
+    {
+      "NAME": "Yashdeep Sahu",
+      "ADDRESS": "5th cross, Gokuldham Layout, Bangalore- 560037",
+      "PHONE_NO": 9123466547,
+      "CUSTOMER_ID": 1014,
+      "EMAIL_ID": "yashdeep_s64@gmail.com"
+    },
+    {
+      "NAME": "Asha Acharya",
+      "ADDRESS": "Flat no-445, Hoysala Phase I, 4th floor, BEL Road, Bangalore- 560422",
+      "PHONE_NO": 9445367829,
+      "CUSTOMER_ID": 1015,
+      "EMAIL_ID": "asha211@gmail.com"
+    },
+    {
+      "NAME": "Viren Singh",
+      "ADDRESS": "#102, 4th Phase, Whitefield, Bangalore- 560087",
+      "PHONE_NO": 9776530987,
+      "CUSTOMER_ID": 1016,
+      "EMAIL_ID": "vplays_643@gmail.com"
+    },
+    {
+      "NAME": "Sam Joseph",
+      "ADDRESS": "#112, Shobha City, Kadugodi, Bangalore- 560041",
+      "PHONE_NO": 9332467185,
+      "CUSTOMER_ID": 1017,
+      "EMAIL_ID": "joseph677@rediffmail.com"
+    },
+    {
+      "NAME": "Roshan Acharya",
+      "ADDRESS": "#122, 16th Cross, Stella Park Layout, Jayanagar, Bangalore- 560067",
+      "PHONE_NO": 9008025343,
+      "CUSTOMER_ID": 1018,
+      "EMAIL_ID": "rrosh_66_ach@gmail.com"
+    },
+    {
+      "NAME": "Rohan Kumar",
+      "ADDRESS": "#56, 12th Cross, Whitefield, Bangalore- 560089",
+      "PHONE_NO": 8876423145,
+      "CUSTOMER_ID": 1019,
+      "EMAIL_ID": "rohanroo@gmail.com"
+    },
+    {
+      "NAME": "Disha T",
+      "ADDRESS": "Flat No. 100, 1st floor, Sky High- Phase III, Dodballapura road, Bangalore- 560054",
+      "PHONE_NO": 8113245678,
+      "CUSTOMER_ID": 1020,
+      "EMAIL_ID": "disha_cooks@gmail.com"
+    }
+  ]}

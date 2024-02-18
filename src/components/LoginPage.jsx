@@ -2,40 +2,34 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './LoginPage.css'; 
 import axios from 'axios';
-
+import {auth} from '../firebase'
+import {signInWithEmailAndPassword} from 'firebase/auth';
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate(); 
 
-  const handleLogin = async (e) => {
+ 
+  const handleLogin =  (e) => {
     e.preventDefault();
-
-    try {
-      const response = await axios.post('/api/login/', {
-        username: username,
-        password: password
-      });
-
-      if (response.data.success) {
-        // Authentication successful
-        navigate('/dashboard'); 
-      } else {
-        // Authentication failed
-        alert('Login failed. Please check your credentials.');
-      }
-    } catch (error) {
-      console.error('Error occurred:', error);
-      alert('Login failed. Please check your credentials.');
-    }
+    signInWithEmailAndPassword(auth,username,password)
+    .then((userCredential)=> {
+      console.log(userCredential);
+      navigate('/dashboard');
+    }).catch((error)=>{
+      console.log(error);
+      alert('Invalid email or password. Please try again.');
+    } );
   };
+    
+
 
   return (
     <div className="login-page">
       <form className="login-form" onSubmit={handleLogin}>
         <h2 className='title'>LOGIN</h2>
         <label className='label'>
-          Username:
+          Email-id:
           <input
             type="text"
             value={username}
@@ -56,6 +50,6 @@ const LoginPage = () => {
       </form>
     </div>
   );
-};
+  };
 
 export default LoginPage;

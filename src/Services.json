@@ -1,0 +1,123 @@
+{"SERVICES": [
+    {
+      "SERVICE_ID": 110,
+      "SERVICE_TYPE": "Entertainment",
+      "DESCRIPTION": "Unlimited Internet Up to 200Mbps Speed",
+      "PRICE": 999.00
+    },
+    {
+      "SERVICE_ID": 212,
+      "SERVICE_TYPE": "Basic",
+      "DESCRIPTION": "Unlimited Internet Up to 40Mbps Speed",
+      "PRICE": 499.00
+    },
+    {
+      "SERVICE_ID": 321,
+      "SERVICE_TYPE": "Basic",
+      "DESCRIPTION": "Unlimited Internet Up to 40Mbps Speed",
+      "PRICE": 499.00
+    },
+    {
+      "SERVICE_ID": 493,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    },
+    {
+      "SERVICE_ID": 523,
+      "SERVICE_TYPE": "Entertainment",
+      "DESCRIPTION": "Unlimited Internet Up to 200Mbps Speed",
+      "PRICE": 999.00
+    },
+    {
+      "SERVICE_ID": 621,
+      "SERVICE_TYPE": "Basic",
+      "DESCRIPTION": "Unlimited Internet Up to 40Mbps Speed",
+      "PRICE": 499.00
+    },
+    {
+      "SERVICE_ID": 702,
+      "SERVICE_TYPE": "Standard",
+      "DESCRIPTION": "Unlimited Internet Up to 100Mbps Speed",
+      "PRICE": 799.00
+    },
+    {
+      "SERVICE_ID": 822,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    },
+    {
+      "SERVICE_ID": 965,
+      "SERVICE_TYPE": "Entertainment",
+      "DESCRIPTION": "Unlimited Internet Up to 200Mbps Speed",
+      "PRICE": 999.00
+    },
+    {
+      "SERVICE_ID": 102,
+      "SERVICE_TYPE": "Basic",
+      "DESCRIPTION": "Unlimited Internet Up to 40Mbps Speed",
+      "PRICE": 499.00
+    },
+    {
+      "SERVICE_ID": 121,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    },
+    {
+      "SERVICE_ID": 873,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    },
+    {
+      "SERVICE_ID": 938,
+      "SERVICE_TYPE": "Entertainment",
+      "DESCRIPTION": "Unlimited Internet Up to 200Mbps Speed",
+      "PRICE": 999.00
+    },
+    {
+      "SERVICE_ID": 230,
+      "SERVICE_TYPE": "Basic",
+      "DESCRIPTION": "Unlimited Internet Up to 40Mbps Speed",
+      "PRICE": 499.00
+    },
+    {
+      "SERVICE_ID": 156,
+      "SERVICE_TYPE": "Standard",
+      "DESCRIPTION": "Unlimited Internet Up to 100Mbps Speed",
+      "PRICE": 799.00
+    },
+    {
+      "SERVICE_ID": 998,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    },
+    {
+      "SERVICE_ID": 174,
+      "SERVICE_TYPE": "Entertainment",
+      "DESCRIPTION": "Unlimited Internet Up to 200Mbps Speed",
+      "PRICE": 999.00
+    },
+    {
+      "SERVICE_ID": 492,
+      "SERVICE_TYPE": "Standard",
+      "DESCRIPTION": "Unlimited Internet Up to 100Mbps Speed",
+      "PRICE": 799.00
+    },
+    {
+      "SERVICE_ID": 566,
+      "SERVICE_TYPE": "Standard",
+      "DESCRIPTION": "Unlimited Internet Up to 100Mbps Speed",
+      "PRICE": 799.00
+    },
+    {
+      "SERVICE_ID": 642,
+      "SERVICE_TYPE": "Professional",
+      "DESCRIPTION": "Unlimited Internet Up to 300Mbps Speed",
+      "PRICE": 1499.00
+    }
+  ]
+}

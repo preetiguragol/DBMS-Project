@@ -1,4 +1,3 @@
-import './Dashboard.css';
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,13 +6,15 @@ import axios from 'axios';
 import CustomerDetails from './CustomerDetails';
 import BillingDetails from './BillingDetails';
 import Footer from './Footer';
-
 import PaymentModal from './PaymentModal';
 import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase';
+import { onAuthStateChanged } from 'firebase/auth';
+import './Dashboard.css';
 const Dashboard = () => {
     const [customerData, setCustomerData] = useState({});
     const [billingData, setBillingData] = useState({});
-    const [showPaymentModal, setShowPaymentModal] = useState(false);
+    const [showPaymentModal, setShowPaymentModal] = useState(false); 
     const navigate = useNavigate();
     const plansAndOffers = [
         { id: 1, title: 'Standard', description: 'Unlimited internet upto 100mbps, unlimited local/STD calls ', imageUrl: 'https://www.pluggedin.com/wp-content/uploads/2020/09/0124BlogTop-2.png' },
@@ -47,27 +48,38 @@ const Dashboard = () => {
         ]
     };
     
-
     useEffect(() => {
-        axios.get('/api/customer') // Modify the URL as per  Django backend API endpoint 
-            .then(response => {
-                setCustomerData(response.data);
+        axios.get('https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/login/LOGIN.json')
+            .then(loginResponse => {
+                const loginData = loginResponse.data;
+                console.log('Login Data:', loginData);
+                
+                
             })
             .catch(error => {
                 console.error('Error fetching customer data:', error);
             });
-
-        axios.get('/api/billing') // Modify the URL as per  Django backend API endpoint
-            .then(response => {
-                setBillingData(response.data);
+    
+        axios.get('https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/customer/CUSTOMER.json')
+            .then(customerResponse => {
+                const customerData = customerResponse.data;
+                console.log('Customer Data:', customerData); 
+                setCustomerData(customerData);
             })
             .catch(error => {
-                console.error('Error fetching billing data:', error);
+                console.error('Error fetching customer data:', error);
             });
-    }, []);
-
     
-    
+        axios.get('https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/payments/PAYMENTS.json')
+            .then(paymentResponse => {
+                const billingData = paymentResponse.data;
+                console.log('Payment Data:', billingData); 
+                setBillingData(billingData);
+            })
+            .catch(error => {
+                console.error('Error fetching payment data:', error);
+            });
+},[]);
 
     const handlePayNow = () => {
         setShowPaymentModal(true);
@@ -81,11 +93,9 @@ const Dashboard = () => {
         console.log('Payment initiated with card details:', cardDetails);
         navigate('/payment-success');
     };
-    
-    
+
     return (
         <div>
-            
             <Slider {...carouselSettings}>
                 {plansAndOffers.map(plan => (
                     <div key={plan.id} className="plan-slide">
@@ -97,7 +107,7 @@ const Dashboard = () => {
                             <p className="plan-description">{plan.description}</p>
                         </div>
                         <div className="pay-now-container">
-                            <button className="pay-now-button" onClick={handlePayNow}>Buy Now {billingData.balanceDue} </button>
+                            <button className="pay-now-button" onClick={handlePayNow}>Buy Now  </button>
                         </div>
                     </div>
                 ))}
@@ -107,7 +117,7 @@ const Dashboard = () => {
                 <BillingDetails billingData={billingData} />
             </div>
             <div className="pay-now-container1">
-                <button className="pay-now-button1" onClick={handlePayNow}>Pay Now{billingData.balanceDue} </button>
+                <button className="pay-now-button1" onClick={handlePayNow}>Pay Now </button>
             </div>
             {showPaymentModal && (
                 <PaymentModal 

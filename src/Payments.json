@@ -1,0 +1,124 @@
+{
+    "PAYMENTS": [
+      {
+        "PAYMENT_ID": 765001,
+        "AMOUNT": 999.00,
+        "BALANCE_DUE": 999.00,
+        "INVOICE_ID": 89765001
+      },
+      {
+        "PAYMENT_ID": 765002,
+        "AMOUNT": 499.00,
+        "BALANCE_DUE": 499.00,
+        "INVOICE_ID": 89765002
+      },
+      {
+        "PAYMENT_ID": 765003,
+        "AMOUNT": 499.00,
+        "BALANCE_DUE": 499.00,
+        "INVOICE_ID": 89765003
+      },
+      {
+        "PAYMENT_ID": 765004,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765004
+      },
+      {
+        "PAYMENT_ID": 765005,
+        "AMOUNT": 999.00,
+        "BALANCE_DUE": 999.00,
+        "INVOICE_ID": 89765005
+      },
+      {
+        "PAYMENT_ID": 765006,
+        "AMOUNT": 499.00,
+        "BALANCE_DUE": 499.00,
+        "INVOICE_ID": 89765006
+      },
+      {
+        "PAYMENT_ID": 765007,
+        "AMOUNT": 799.00,
+        "BALANCE_DUE": 799.00,
+        "INVOICE_ID": 89765007
+      },
+      {
+        "PAYMENT_ID": 765008,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765008
+      },
+      {
+        "PAYMENT_ID": 765009,
+        "AMOUNT": 999.00,
+        "BALANCE_DUE": 999.00,
+        "INVOICE_ID": 89765009
+      },
+      {
+        "PAYMENT_ID": 765010,
+        "AMOUNT": 499.00,
+        "BALANCE_DUE": 499.00,
+        "INVOICE_ID": 89765010
+      },
+      {
+        "PAYMENT_ID": 765011,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765011
+      },
+      {
+        "PAYMENT_ID": 765012,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765012
+      },
+      {
+        "PAYMENT_ID": 765013,
+        "AMOUNT": 999.00,
+        "BALANCE_DUE": 999.00,
+        "INVOICE_ID": 89765013
+      },
+      {
+        "PAYMENT_ID": 765014,
+        "AMOUNT": 499.00,
+        "BALANCE_DUE": 499.00,
+        "INVOICE_ID": 89765014
+      },
+      {
+        "PAYMENT_ID": 765015,
+        "AMOUNT": 799.00,
+        "BALANCE_DUE": 799.00,
+        "INVOICE_ID": 89765015
+      },
+      {
+        "PAYMENT_ID": 765016,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765016
+      },
+      {
+        "PAYMENT_ID": 765017,
+        "AMOUNT": 999.00,
+        "BALANCE_DUE": 999.00,
+        "INVOICE_ID": 89765017
+      },
+      {
+        "PAYMENT_ID": 765018,
+        "AMOUNT": 799.00,
+        "BALANCE_DUE": 799.00,
+        "INVOICE_ID": 89765018
+      },
+      {
+        "PAYMENT_ID": 765019,
+        "AMOUNT": 799.00,
+        "BALANCE_DUE": 799.00,
+        "INVOICE_ID": 89765019
+      },
+      {
+        "PAYMENT_ID": 765020,
+        "AMOUNT": 1499.00,
+        "BALANCE_DUE": 1499.00,
+        "INVOICE_ID": 89765020
+      }
+    ]
+  }
