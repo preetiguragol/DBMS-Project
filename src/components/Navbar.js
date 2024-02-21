@@ -13,13 +13,13 @@ const Navbar = () => {
         
       </li>
       <li>
-        <Link to="/dashboard" className="nav-link">Prepaid</Link>
+        <Link to="/prepaid" className="nav-link">Prepaid</Link>
       </li>
       <li>
-        <Link to="/dashboard" className="nav-link">Postpaid</Link>
+        <Link to="/postpaid" className="nav-link">Postpaid</Link>
       </li>
       <li>
-        <Link to="/dashboard" className="nav-link">DTH</Link>
+        <Link to="/DTH" className="nav-link">DTH</Link>
       </li>
       
      

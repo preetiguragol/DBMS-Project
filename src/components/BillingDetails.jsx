@@ -1,6 +1,10 @@
 import React from 'react';
+// import data from 'src\firebase.js';
 
 const BillingDetails = ({ billingData }) => {
+
+    
+
     return (
         <div className="billing-details">
              <h2>Billing Information</h2>

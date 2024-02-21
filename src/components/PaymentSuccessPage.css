@@ -1,17 +1,43 @@
 .center-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh; 
-}
-
-h2 {
-    font-size: 24px; 
-    text-align: center; 
-}
-
-p {
-    font-size: 18px; 
-    text-align: center; 
-}
+    justify-content: center;
+  }
+  
+  .payment-title {
+    margin-top: 50px; /* Adjust this value based on your navbar height */
+  }
+  .print-button{
+    margin-top: 30px;
+    
+  }
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .customer-details1,
+  .billing-details1 {
+    background-color: #f3eeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Adjust as needed */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .details-container {
+      flex-direction: column;
+    }
+  
+    .customer-details1,
+    .billing-details1 {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
