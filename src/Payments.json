@@ -4,121 +4,141 @@
         "PAYMENT_ID": 765001,
         "AMOUNT": 999.00,
         "BALANCE_DUE": 999.00,
-        "INVOICE_ID": 89765001
+        "INVOICE_ID": 89765001,
+        "EMAIL_ID":"shubha23@gmail.com"
       },
       {
         "PAYMENT_ID": 765002,
         "AMOUNT": 499.00,
         "BALANCE_DUE": 499.00,
-        "INVOICE_ID": 89765002
+        "INVOICE_ID": 89765002,
+        "EMAIL_ID":"ris1902@gmail.com"
       },
       {
         "PAYMENT_ID": 765003,
         "AMOUNT": 499.00,
         "BALANCE_DUE": 499.00,
-        "INVOICE_ID": 89765003
+        "INVOICE_ID": 89765003,
+        "EMAIL_ID":"prxo08@rediffmail.com"
       },
       {
         "PAYMENT_ID": 765004,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765004
+        "INVOICE_ID": 89765004,
+        "EMAIL_ID":"czborg24@gmail.com"
       },
       {
         "PAYMENT_ID": 765005,
         "AMOUNT": 999.00,
         "BALANCE_DUE": 999.00,
-        "INVOICE_ID": 89765005
+        "INVOICE_ID": 89765005,
+        "EMAIL_ID":"sknivv@gmail.com"
       },
       {
         "PAYMENT_ID": 765006,
         "AMOUNT": 499.00,
         "BALANCE_DUE": 499.00,
-        "INVOICE_ID": 89765006
+        "INVOICE_ID": 89765006,
+        "EMAIL_ID":"viv_22@rediffmail.com"
       },
       {
         "PAYMENT_ID": 765007,
         "AMOUNT": 799.00,
         "BALANCE_DUE": 799.00,
-        "INVOICE_ID": 89765007
+        "INVOICE_ID": 89765007,
+        "EMAIL_ID":"viv_22@rediffmail.com"
       },
       {
         "PAYMENT_ID": 765008,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765008
+        "INVOICE_ID": 89765008,
+        "EMAIL_ID":"raccoon_22_45@gmail.com"
       },
       {
         "PAYMENT_ID": 765009,
         "AMOUNT": 999.00,
         "BALANCE_DUE": 999.00,
-        "INVOICE_ID": 89765009
+        "INVOICE_ID": 89765009,
+        "EMAIL_ID":"thomas677@gmail.com"
       },
       {
         "PAYMENT_ID": 765010,
         "AMOUNT": 499.00,
         "BALANCE_DUE": 499.00,
-        "INVOICE_ID": 89765010
+        "INVOICE_ID": 89765010,
+        "EMAIL_ID":"sankethreddy@gmail.com"
       },
       {
         "PAYMENT_ID": 765011,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765011
+        "INVOICE_ID": 89765011,
+        "EMAIL_ID":"rishik_63@gmail.com"
       },
       {
         "PAYMENT_ID": 765012,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765012
+        "INVOICE_ID": 89765012,
+        "EMAIL_ID":"pushkal_xo@gmail.com"
       },
       {
         "PAYMENT_ID": 765013,
         "AMOUNT": 999.00,
         "BALANCE_DUE": 999.00,
-        "INVOICE_ID": 89765013
+        "INVOICE_ID": 89765013,
+        "EMAIL_ID":"sam_negi@gmail.com"
       },
       {
         "PAYMENT_ID": 765014,
         "AMOUNT": 499.00,
         "BALANCE_DUE": 499.00,
-        "INVOICE_ID": 89765014
+        "INVOICE_ID": 89765014,
+        "EMAIL_ID":"yashdeep_s64@gmail.com"
       },
       {
         "PAYMENT_ID": 765015,
         "AMOUNT": 799.00,
         "BALANCE_DUE": 799.00,
-        "INVOICE_ID": 89765015
+        "INVOICE_ID": 89765015,
+        "EMAIL_ID":"asha211@gmail.com"
       },
       {
         "PAYMENT_ID": 765016,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765016
+        "INVOICE_ID": 89765016,
+        "EMAIL_ID":"vplays_643@gmail.com"
       },
       {
         "PAYMENT_ID": 765017,
         "AMOUNT": 999.00,
         "BALANCE_DUE": 999.00,
-        "INVOICE_ID": 89765017
+        "INVOICE_ID": 89765017,
+        "EMAIL_ID":"joseph677@rediffmail.com"
       },
       {
         "PAYMENT_ID": 765018,
         "AMOUNT": 799.00,
         "BALANCE_DUE": 799.00,
-        "INVOICE_ID": 89765018
+        "INVOICE_ID": 89765018,
+        "EMAIL_ID":"rrosh_66_ach@gmail.com"
       },
       {
         "PAYMENT_ID": 765019,
         "AMOUNT": 799.00,
         "BALANCE_DUE": 799.00,
-        "INVOICE_ID": 89765019
+        "INVOICE_ID": 89765019,
+        "EMAIL_ID":"rohanroo@gmail.com"
       },
       {
         "PAYMENT_ID": 765020,
         "AMOUNT": 1499.00,
         "BALANCE_DUE": 1499.00,
-        "INVOICE_ID": 89765020
+        "INVOICE_ID": 89765020,
+        "EMAIL_ID":"disha_cooks@gmail.com"
       }
     ]
   }

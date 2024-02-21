@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './PaymentModal.css';
 import BillingDetails from './BillingDetails';
 
-const PaymentModal = ({ onClose, onCancel, onSubmit }) => {
+const PaymentModal = ({ onClose, onCancel, onSubmit,customerData,
+    billingData }) => {
     const [cardDetails, setCardDetails] = useState({
         cardNumber: '',
         cardName: '',

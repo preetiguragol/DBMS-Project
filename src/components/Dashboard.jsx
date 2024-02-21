@@ -11,12 +11,13 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import "./Dashboard.css";
+
 const Dashboard = () => {
-  const [customerData, setCustomerData] = useState([]);
+  const [customerData, setCustomerData] = useState({});
   const [billingData, setBillingData] = useState({});
   const [showPaymentModal, setShowPaymentModal] = useState(false);
 
-  // const authenticatedUserEmail = auth.currentUser.email;
+ 
   const navigate = useNavigate();
   const plansAndOffers = [
     {
@@ -86,42 +87,64 @@ const Dashboard = () => {
       },
     ],
   };
+  
+  
+  const [authenticatedUserEmail, setAuthenticatedUserEmail] = useState("");
+
+useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+        if (user) {
+          
+            setAuthenticatedUserEmail(user.email);
+        } else {
+            navigate('./login');
+        }
+    });
+
+    return () => unsubscribe();
+}, []);
+
 
   useEffect(() => {
     axios
       .get(
-        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/login/LOGIN.json"
+        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/customer/CUSTOMER.json",
+        {
+          params: {
+            email: authenticatedUserEmail,
+          },
+        }
       )
-      .then((LoginResponse) => {
-        const loginData = LoginResponse.data;
-        console.log("Login Data:", loginData);
+      .then((response) => {
+        const customerData = response.data.filter(
+          (customer) => customer.EMAIL_ID === authenticatedUserEmail
+        )[0];
+        console.log(customerData);
+        setCustomerData(customerData);
       })
       .catch((error) => {
         console.error("Error fetching customer data:", error);
       });
     axios
       .get(
-        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/customer/CUSTOMER.json"
+        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/payments/PAYMENTS.json",
+        {
+          params: {
+            email: authenticatedUserEmail,
+          },
+        }
       )
-      .then((CustomerResponse) => {
-        const customerData = CustomerResponse.data;
-        console.log("Customer Data:", customerData);
+      .then((response) => {
+        const billingData = response.data.filter(
+          (payment) => payment.EMAIL_ID === authenticatedUserEmail
+        )[0];
+        console.log(billingData);
+        setBillingData(billingData);
       })
       .catch((error) => {
-        console.error("Error fetching customer data:", error);
+        console.error("Error fetching billing data:", error);
       });
-    axios
-      .get(
-        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/payments/PAYMENTS.json"
-      )
-      .then((BillingResponse) => {
-        const billingData = BillingResponse.data;
-        console.log("Billing Data:", billingData);
-      })
-      .catch((error) => {
-        console.error("Error fetching customer data:", error);
-      });
-  }, []);
+  }, [authenticatedUserEmail]);
 
   const handlePayNow = () => {
     setShowPaymentModal(true);
@@ -135,6 +158,7 @@ const Dashboard = () => {
     console.log("Payment initiated with card details:", cardDetails);
     navigate("/payment-success");
   };
+  
 
   return (
     <div>
@@ -158,9 +182,11 @@ const Dashboard = () => {
         ))}
       </Slider>
       <div className="dashboard">
-        <CustomerDetails customerData={customerData} />
-        <BillingDetails billingData={billingData} />
+      <CustomerDetails customerData={customerData} />
+       <BillingDetails billingData={billingData} />
       </div>
+
+
 
       <div className="pay-now-container1">
         <button className="pay-now-button1" onClick={handlePayNow}>
@@ -171,8 +197,8 @@ const Dashboard = () => {
         <PaymentModal
           onClose={handleCloseModal}
           onCancel={handleCloseModal}
-          onSubmit={handlePaymentSubmit}
-        />
+          onSubmit={handlePaymentSubmit}/>
+          
       )}
       <Footer />
     </div>
