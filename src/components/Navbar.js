@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Navbar.css';
 const Navbar = () => {
-  
   return (
     <div>
     <nav className="navbar">NETWISE 
@@ -20,6 +19,9 @@ const Navbar = () => {
       </li>
       <li>
         <Link to="/DTH" className="nav-link">DTH</Link>
+      </li>
+      <li>
+        <Link to="/change-address" className="nav-link">Customer Care</Link>
       </li>
       
      

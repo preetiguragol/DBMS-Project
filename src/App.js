@@ -8,6 +8,7 @@ import PaymentSuccessPage from './components/PaymentSuccessPage';
 import PrepaidPage from './components/PrepaidPage';
 import PostpaidPage from './components/PostpaidPage';
 import DTHPage from './components/DTHPage';
+import UpdateAddress from './components/UpdateAddress';
 function App() {
   return (
     
@@ -24,6 +25,7 @@ function App() {
                <Route path="/prepaid" element={<PrepaidPage/>} />
                <Route path="/postpaid" element={<PostpaidPage/>} />
                <Route path="/dth" element={<DTHPage/>} />
+               <Route path="/change-address" element={<UpdateAddress/>} />
             </Routes>                    
         </section>
       </div>

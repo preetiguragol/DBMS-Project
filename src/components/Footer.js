@@ -7,23 +7,23 @@ const Footer = () => {
       <div className='footer-margin'>
       <ol>
       <ul><a className='links-style' href='/'>Log Out</a> </ul>
-      <ul><a className='links-style' href='dashboard'>Contact</a> </ul>
-      <ul><a className='links-style' href='dashboard'>Help</a> </ul>
-      <ul><a className='links-style' href='dashboard'>CutomerCare</a> </ul>
+      <ul><a className='links-style' href='/dashboard'>Contact</a> </ul>
+      <ul><a className='links-style' href='/dashboard'>Help</a> </ul>
+      <ul><a className='links-style' href='/change-address'>CutomerCare</a> </ul>
       </ol>
       </div>
       <div className='footer-margin'>
       <ol>
-      <ul><a className='links-style' href='dashboard'>WhoAreWe</a> </ul>
-      <ul><a className='links-style' href='dashboard'>Careers</a> </ul>
-      <ul><a className='links-style' href='dashboard'>Press</a> </ul>
+      <ul><a className='links-style' href='/dashboard'>WhoAreWe</a> </ul>
+      <ul><a className='links-style' href='/dashboard'>Careers</a> </ul>
+      <ul><a className='links-style' href='/dashboard'>Press</a> </ul>
       </ol>
       </div>
       <ol>
       
       <ul><a className='links-style' href='dashboard'>QuickLink</a> </ul>
-      <ul><a className='links-style' href='dashboard'>DTH</a> </ul>
-      <ul><a className='links-style' href='dashboard'>Prepaid</a> </ul>
+      <ul><a className='links-style' href='/dth'>DTH</a> </ul>
+      <ul><a className='links-style' href='/prepaid'>Prepaid</a> </ul>
       </ol>
       <ol>
       <ul><a className='links-style' href='dashboard'>FAQ</a> </ul>

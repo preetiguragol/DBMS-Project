@@ -1,0 +1,51 @@
+/* Style the entire form */
+.address-form {
+    margin-top:40px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style labels and inputs */
+  .address-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .address-form input,
+  .address-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .address-form textarea {
+    height: 80px;
+  }
+  
+  /* Style the submit button */
+  .address-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .address-form button:hover {
+    background-color: #45A049;
+  }
+  
+  /* Style error messages */
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  

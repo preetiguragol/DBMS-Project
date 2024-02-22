@@ -183,7 +183,7 @@ useEffect(() => {
       </Slider>
       <div className="dashboard">
       <CustomerDetails customerData={customerData} />
-       <BillingDetails billingData={billingData} />
+      <BillingDetails billingData={billingData} />
       </div>
 
 
