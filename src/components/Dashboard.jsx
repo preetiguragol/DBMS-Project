@@ -127,7 +127,7 @@ useEffect(() => {
       });
     axios
       .get(
-        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/payments/PAYMENTS.json",
+        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/invoice/INVOICE.json",
         {
           params: {
             email: authenticatedUserEmail,

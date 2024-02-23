@@ -49,7 +49,7 @@ const PaymentSuccessPage = ({  }) => {
       });
     axios
       .get(
-        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/payments/PAYMENTS.json",
+        "https://broadband-billing-default-rtdb.asia-southeast1.firebasedatabase.app/invoice/INVOICE.json",
         {
           params: {
             email: authenticatedUserEmail,
@@ -83,7 +83,7 @@ const PaymentSuccessPage = ({  }) => {
   
     // Add a border around the content
     const contentWidth = 180; // Adjust as needed
-    const contentHeight = 220; // Adjust as needed
+    const contentHeight = 260; // Adjust as needed
     pdf.setDrawColor(0); // Set border color to black
     pdf.setLineWidth(1); // Set border width
     pdf.rect(15, yPos, contentWidth, contentHeight);
@@ -133,11 +133,17 @@ const PaymentSuccessPage = ({  }) => {
     // Add the billing details
     pdf.text(20, yPos, 'Billing Details:');
     yPos += 10;
-    pdf.text(20, yPos, `Amount paid: Rs ${billingData.AMOUNT}`);
+    pdf.text(20, yPos, `Invoice_ID:  ${billingData.INVOICE_ID}`);
     yPos += 10;
-    pdf.text(20, yPos, `Payment ID: Rs ${billingData.PAYMENT_ID}`);
+    pdf.text(20, yPos, `Customer_ID:  ${billingData.CUSTOMER_ID}`);
     yPos += 10;
-    pdf.text(20, yPos, `Invoice ID: ${billingData.INVOICE_ID}`);
+    pdf.text(20, yPos, `Service_Type:  ${billingData.SERVICE_TYPE}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Amount Paid: Rs ${billingData.TOTAL_AMT}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Email-ID:  ${billingData.EMAIL_ID}`);
+    yPos += 10;
+    pdf.text(20, yPos, `In-Date: ${billingData.IN_DATE}`);
     yPos += 20;
   
     // Add the customer details
