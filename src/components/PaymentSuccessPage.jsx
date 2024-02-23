@@ -71,67 +71,98 @@ const PaymentSuccessPage = ({  }) => {
 
   const handlePrint = () => {
     const pdf = new jsPDF();
-    const logoWidth = 80; // Adjust as needed
-    const logoHeight = 80; // Adjust as needed
-    const logoX = pdf.internal.pageSize.getWidth() - logoWidth - 10; // Position from right edge
+    const logoWidth = 80;
+    const logoHeight = 80;
+    const logoX = pdf.internal.pageSize.getWidth() - logoWidth - 10;
     const logoY = 10;
-
+  
     pdf.addImage(logoImage, 'PNG', logoX, logoY, logoWidth, logoHeight);
-    
+  
     // Set the starting y position for the content
     let yPos = 20;
-
+  
+    // Add a border around the content
+    const contentWidth = 180; // Adjust as needed
+    const contentHeight = 220; // Adjust as needed
+    pdf.setDrawColor(0); // Set border color to black
+    pdf.setLineWidth(1); // Set border width
+    pdf.rect(15, yPos, contentWidth, contentHeight);
+  
     // Add the title
-    pdf.text(20, yPos, 'Payment Successful!');
-    yPos += 10;
-
+    pdf.text(20, yPos + 10, 'Payment Successful!');
+    yPos += 20;
+  
     // Add the message
     pdf.text(20, yPos, 'Thank you for your payment.');
-  yPos += 20;
+    yPos += 20;
 
-  // Add the billing details
-  pdf.text(20, yPos, 'Billing Details:');
-  yPos += 10;
-  pdf.text(20, yPos, `Monthly Bill: ${billingData.AMOUNT}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Payment ID: ${billingData.PAYMENT_ID}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Invoice ID: ${billingData.INVOICE_ID}`);
-  yPos += 20;
 
-  // Add the customer details
-  pdf.text(20, yPos, 'Customer Details:');
-  yPos += 10;
-  pdf.text(20, yPos, `Name: ${customerData.NAME}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Phone Number: ${customerData.PHONE_NO}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Email: ${customerData.EMAIL_ID}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Address: ${customerData.ADDRESS}`);
-  yPos += 10;
-  pdf.text(20, yPos, `Customer ID: ${customerData.CUSTOMER_ID}`);
-  yPos += 20;
+    pdf.text(20, yPos, 'From');
+    yPos += 10;
+    pdf.text(20, yPos, `Netwise`);
+    yPos += 10;
+    pdf.text(20, yPos, `990011887765 `);
+    yPos += 10;
+    pdf.text(20, yPos, `netwise23.gmail.com `);
+    yPos += 10;
+    const addressText1 = `Address: Sir M. Visvesvaraya Institute of Technology `;
+    const addressLines1 = pdf.splitTextToSize(addressText1, contentWidth - 40);
+    addressLines1.forEach(line => {
+      pdf.text(20, yPos, line);
+      yPos += 10;
+    });
+    yPos += 10;
 
-  // Save the PDF
-  pdf.save('payment_success.pdf');
-  pdf.autoPrint();
-};
+    pdf.text(20, yPos, 'To:');
+    yPos += 10;
+    pdf.text(20, yPos, `Name: ${customerData.NAME}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Phone Number: ${customerData.PHONE_NO}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Email: ${customerData.EMAIL_ID}`);
+    yPos += 10;
+    const addressText = `Address: ${customerData.ADDRESS}`;
+    const addressLines = pdf.splitTextToSize(addressText, contentWidth - 40);
+    addressLines.forEach(line => {
+      pdf.text(20, yPos, line);
+      yPos += 10;
+    });
+    pdf.text(20, yPos, `Customer ID: ${customerData.CUSTOMER_ID}`);
+    yPos += 20;
+  
+    // Add the billing details
+    pdf.text(20, yPos, 'Billing Details:');
+    yPos += 10;
+    pdf.text(20, yPos, `Amount paid: Rs ${billingData.AMOUNT}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Payment ID: Rs ${billingData.PAYMENT_ID}`);
+    yPos += 10;
+    pdf.text(20, yPos, `Invoice ID: ${billingData.INVOICE_ID}`);
+    yPos += 20;
+  
+    // Add the customer details
+    
+  
+    // Save the PDF
+    pdf.save('payment_success.pdf');
+    pdf.autoPrint();
+  };
+  
 
-  return (
-    <div className='background'>
-      <div className="center-content" ref={contentRef}>
-        <h2 className='payment-title'>Payment Successful!</h2>
-        <p>Thank you for your payment.</p>
-        
-        <div className='dashboard1'>
+return (
+  <div className='background'>
+    <div className="center-content" ref={contentRef} style={{ border: '2px solid #ddd', padding: '20px' }}>
+      <h2 className='payment-title'>Payment Successful!</h2>
+      <p>Thank you for your payment.</p>
+      
+      <div className='dashboard1'>
         <CustomerDetails customerData={customerData} />
-       <BillingDetails billingData={billingData} />
-       </div>
+        <BillingDetails billingData={billingData} />
       </div>
-      <button className='print' onClick={handlePrint}>PRINT</button>
     </div>
-  );
+    <button className='print' onClick={handlePrint}>PRINT</button>
+  </div>
+);
 };
 
 export default PaymentSuccessPage;
