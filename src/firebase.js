@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "AIzaSyDeYFarXHju46p_jmBEURL2kq7GxIPzbFQ",
+  
   authDomain: "broadband-billing.firebaseapp.com",
   projectId: "broadband-billing",
   storageBucket: "broadband-billing.appspot.com",
