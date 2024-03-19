@@ -8,7 +8,7 @@ import BillingDetails from "./BillingDetails";
 import Footer from "./Footer";
 import PaymentModal from "./PaymentModal";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth } from "../components/firebase"
 import { onAuthStateChanged } from "firebase/auth";
 import "./Dashboard.css";
 
